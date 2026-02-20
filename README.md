@@ -74,7 +74,7 @@ This Streamlit app allows users to calculate their **net annual and monthly sala
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<yourusername>/Italian_salary_calculator.git
+git clone https://github.com/enrymather/Italian_salary_calculator.git
 cd Italian_salary_calculator
 ```
 
