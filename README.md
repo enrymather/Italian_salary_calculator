@@ -4,6 +4,8 @@
 
 This Streamlit app allows users to calculate their **net annual and monthly salary** (reddito netto) in Italy based on the gross RAL (Retribuzione Annua Lorda) and additional parameters such as region, company size, and fiscal benefits.
 
+🔗 Live demo: https://italian-salary-calculator.streamlit.app/
+
 ---
 
 ## Features
@@ -51,9 +53,15 @@ This Streamlit app allows users to calculate their **net annual and monthly sala
 
   + €50,000 -> €0
 
-- **Further tax credits -> _ulteriori detrazioni_** applied for certain RAL ranges, e.g. €1,000 for €20,000 to €32,000.
+- **Further tax credits** 
+  
+  + **_Ulteriori detrazioni_** applied for certain RAL ranges, e.g. €1,000 for €20,000 to €32,000
+  
+    * N.B. When searching sources for detailed explanations on which quantity these credits are based upon - whether it is total _imponibile IRPEF_ or total RAL - I found nothing that could dispel any doubts. For this reason, I decided to use RAL, given that the application of such tax credits produces a jumpy RAL-net salary curve anyway.
 
-- **_Bonus cuneo fiscale_** included for RAL ≤ €20,000, following simplified rates.
+  + **_Bonus cuneo fiscale_** included for RAL ≤ €20,000.
+  
+    * N.B. In this case, I used RAL with a bit more confidence that the calculation is based upon it, given what I found in online sources.
 
 - **Fiscal benefit (e.g. “rientro dei cervelli”)**: user can specify percentage of taxable income exempt from IRPEF.
 
