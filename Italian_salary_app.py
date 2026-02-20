@@ -246,7 +246,7 @@ with col2:
     dimensione = st.selectbox("Dimensione azienda", ["< 15 dipendenti", "≥ 15 dipendenti"])
     addiz_comunale_input = st.text_input("Addizionale comunale (%)", placeholder=str(100*DEFAULT_ADDIZ_COMUNALE).replace(".",","))
     beneficio_fiscale_expl = st.markdown(
-        info_box("N.B. La percentuale dell'imponibile IRPEF esente da tassazione è dovuta di solito all'applicazione di speciali regimi fiscali, come quello per lavoratori impatriati (c.d. del rientro dei cervelli).", "#78d2ff", 16),
+        info_box("N.B. La percentuale dell'imponibile IRPEF esente da tassazione è dovuta di solito all'applicazione di speciali regimi fiscali, come quello per lavoratori impatriati (c.d. del rientro dei cervelli).", "#fff4ba", 16),
         unsafe_allow_html=True
     )
 
@@ -364,14 +364,14 @@ with col_pie:
     st.plotly_chart(fig_pie, use_container_width=True)
     
     st.markdown(
-        info_box("N.B. In caso si abbia più di un datore di lavoro nell'anno in corso, usare come valore di RAL quello complessivo: i risultati qui mostrati equivalgono a quelli che si avrebbero con la stessa RAL pagata da un unico datore (quindi a valle dei conguagli e della dichiarazione dei redditi).", "#cdff78", 16),
+        info_box("N.B. In caso si abbia più di un datore di lavoro nell'anno in corso, usare come valore di RAL quello complessivo: i risultati qui mostrati equivalgono a quelli che si avrebbero con la stessa RAL pagata da un unico datore (quindi a valle dei conguagli e della dichiarazione dei redditi).", "#fff4ba", 16),
         unsafe_allow_html=True
     )
 
 st.markdown('<div class="par-divider"></div>', unsafe_allow_html=True)
 
 st.markdown(
-    info_box("SEMPLIFICAZIONI ADOTTATE: <br>Le addizionali comunali e regionali possono differire sia per aliquote di reddito che per la situazione familiare del contribuente; quelle \"secche\" qui usate sono una semplificazione. <br>Anche la scelta della regione di residenza è stata inclusa per completezza, ma al momento non ha effetto sul risultato. <br>Quale ulteriore semplificazione non è stata introdotta la scelta del tipo di contratto (determinato, indeterminato, ecc.).", "#fff4ba", 18),
+    info_box("SEMPLIFICAZIONI ADOTTATE: <br>Le addizionali comunali e regionali possono differire sia per aliquote di reddito che per la situazione familiare del contribuente; quelle \"secche\" qui usate sono una semplificazione. <br>Anche la scelta della regione di residenza è stata inclusa per completezza, ma al momento non ha effetto sul risultato. <br>Quale ulteriore semplificazione non è stata introdotta la scelta del tipo di contratto (determinato, indeterminato, ecc.).", "#78d2ff", 18),
     unsafe_allow_html=True
 )
 
